@@ -189,7 +189,7 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 -- Set folding settings when not by a plugin.
 vim.opt.foldmethod = 'indent'
-vim.opt.foldcolumn = 1
+vim.opt.foldcolumn = '1'
 vim.opt.foldlevel = 20
 
 -- [[ Basic Autocommands ]]
@@ -349,11 +349,11 @@ require('lazy').setup {
                 -- You can put your default mappings / updates / etc. in here
                 --  All the info you're looking for is in `:help telescope.setup()`
                 --
-                -- defaults = {
-                --   mappings = {
-                --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
-                --   },
-                -- },
+                defaults = {
+                    mappings = {
+                        i = { ['<c-enter>'] = 'to_fuzzy_refine' },
+                    },
+                },
                 -- pickers = {}
                 extensions = {
                     ['ui-select'] = {
